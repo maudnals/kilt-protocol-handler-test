@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Verifier app</title>
-    <h1>Verifier app!!</h1>
-    <button onclick="navigator.registerProtocolHandler('web+kilto',
-    'https://maudnals.github.io/kilt-protocol-handler-test/index.html/verify?q=%s',
-    'Kilto');">Register for KILTO</button>
+    <h1>Verifier app</h1>
+    <button onclick="registerHandler()">Register for KILTO</button>
 </head>
 <body>
     <script>
-    // navigator.registerProtocolHandler("web+kilto",
-    //                               "https://maudnals.github.io/kilt-protocol-handler-test/index.html/verify?q=%s",
-    //                               "Kilto");
-    // console.log("hi")
-    </script>
+
+        function registerHandler() {
+            navigator.registerProtocolHandler('web+kilto',
+    'https://maudnals.github.io/kilt-protocol-handler-test/index.html/verify?q=%s',
+    'Kilto');
+    console.log("hii")
+        }
+     </script>
 </body>
 </html>
